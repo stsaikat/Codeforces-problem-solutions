@@ -36,7 +36,15 @@ const double PI=acos(-1.0);
 
 int main()
 {
-	
+	int tc = II();
+	while(tc--)
+	{
+		int n = II(), k1 = II(), k2 = II(), w = II(), b = II();
+		int white = (k1+k2)/2;
+		int black = (2*n-k1-k2)/2;
+		if(white < w || black < b) printf("NO\n");
+		else printf("YES\n");
+	}
 
 	return 0;
 }
